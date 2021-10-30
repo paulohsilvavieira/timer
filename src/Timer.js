@@ -45,6 +45,7 @@ export class Timer extends Component {
 
   countDown() {
     this.setState({ seconds: this.props.seconds });
+    
     const { finishTime } = this.props;
 
     this.timer = setInterval(() => {

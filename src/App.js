@@ -59,6 +59,7 @@ class App extends React.Component {
       stopTimer: false,
     });
   }
+
   finishTime() {
     this.setState({ mostraMensagem: true });
   }
@@ -89,7 +90,11 @@ class App extends React.Component {
         </button>
         <br />
         <br />
-        <button type='button' onClick={() => this.handleDificult('easy')}>
+        <button
+          type='button'
+          className={`${mostraMensagem ? 'teste' : 'tete2'} teste`}
+          onClick={() => this.handleDificult('easy')}
+        >
           Facil
         </button>
         <button type='button' onClick={() => this.handleDificult('medium')}>
